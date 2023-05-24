@@ -85,7 +85,7 @@ console.log(c) // errore
 //let stringa2 = 'Annalisa'; // String
 //let numero2 = 10.5; // Number
 //let numero3 = 5*2; // Number
-
+/*
 let numero = 10; // number
 let stringa = "Andrea"; // string
 let booleano = true; // boolean
@@ -94,25 +94,70 @@ let nullo = null; // null
 let simbolo = Symbol() // Symbol()
 let bigIntero = 10n // bigint
 
-
-
-console.log(typeof null); //objectZ
-console.log(simbolo); //objectZ
-console.log(typeof bigIntero); //objectZ
-
+console.log(typeof null); //object
+console.log(typeof(null)); //object
+console.log(simbolo); //object
+console.log(typeof bigIntero); //object
+*/
 
 
 //$ Dati Oggetti
 
-// creazione di un oggetto utilizzando la sintassi letterale
+// Array
+/*
+const nomi =['andrea', 'sandro', 'giovanni'];
+console.log(nomi); //Array(3) [ "andrea", "sandro", "giovanni"]
+console.log(nomi[1]); // sandro
+console.log(nomi.length); // 3
+*/
+
+/*
+// Oggetti
 let person = {
     name: "Mario",
     age: 30,
     isStudent: false,
-    sayHello: function() {
-      console.log("Hello!");
+    saluta: function () {
+      return console.log("Ciao!");
     }
-  };
+};
+console.log(person); // Object
+console.log(person.name); // Mario
+person.saluta(); // Ciao!
 
-// creazione di un oggetto utilizzando la parola chiave "new"
+// new
 let date = new Date();
+console.log(date);
+console.log(typeof date);
+*/
+
+
+//% Value type vs Reference type
+
+//$ value type
+/*
+let a = 10;
+let b = a;
+console.log(a); // 10
+console.log(b); // 10
+a = 20;
+console.log(a); // 20
+console.log(b); // 10
+ */
+
+//$ reference type
+/*
+let obj1 = {
+  p1:10
+};
+let obj2 = obj1;
+
+console.log(obj1); // Object { p1: 10 }
+console.log(obj2); // Object { p1: 10 }
+
+obj1.p1 = 20;
+
+console.log(obj1); // Object { p1: 20 }
+console.log(obj2); // Object { p1: 20 }
+
+ */
