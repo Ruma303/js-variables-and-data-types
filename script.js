@@ -1,7 +1,7 @@
 //% Tipi di variabili
 
 //$ Sintassi variabile
-// let nomeVariabile = "Valore della variabile";
+//let nomeVariabile = "Valore della variabile";
 
 
 //$ Tipi variabile
@@ -9,16 +9,16 @@
 var anni;
 let name = "Giorgio";
 const job = "Web Developer";
-*/
+ */
 /*
 var anni; //*OK
 let name; //*OK
 const job;//!NO
-*/
+ */
 
 //* Definizione vs Inizializzazione
 /*
-//Definizione
+//Definizione o dichiarazione
 let anni;
 
 // Inizializzazione
@@ -26,57 +26,80 @@ const nome = "Piero";
 
 console.log(anni); // undefined
 console.log(nome); // Piero
-*/
+ */
 
 //* Riassegnazione
 /*
 let anni = 10;
 console.log(anni); //10
+
 anni = 20;
-console.log(anni); //20 */
+console.log(anni); //20
+ */
 
 /*
 let anni = 10;
 let anni = 20; //! Errore
-*/
+ */
+
 /*
 const name = "Matteo";
+console.log(name);
+
+ */
+
+/*
 name = "Piero";
-*/
+console.log(name);
+ */
 
 //$ Identificatore
 
-//Proibiti
-//let let = 0;
+//*Proibiti
+/*
+let _nome = "Mario";
+let _cognome = "Rossi";
 
+let nomeECognomeCompleto = _nome + " " + _cognome;
+
+console.log(nomeECognomeCompleto);
+
+ */
 //* Case sensitive
 /*
 let a = 10;
 let A = "Ciao";
-console.log(a + " " + A);
-//10 Ciao
- */
+console.log(a + " " + A); //10 Ciao
 
+ */
 //$ Definire più variabili in un'unica istruzione
 
-//var a, b = 10, c = "Ciao";
+//let a, b = 10, c = "Ciao";
 /*
 var a;
 var b = 10;
 var c = "Ciao";
  */
+//console.log(a);
 
 //$ Variable Scope e hoisting
+
+//* Global scope
+
+//let b = 10;
+
+
 /*
-if (true) {
-    var a = "var ok";
-    let b = "let non ok";
-    const c = "const non ok";
+if (true) { //* Block scope
+  var a = "var ok";
+  let b = "let non ok";
+  const costante = "const non ok";
 }
-console.log(a) // var ok
-console.log(b) // errore
-console.log(c) // errore
  */
+//console.log(a) // var ok
+//console.log(b) // errore
+//console.log(costante) // errore
+
 
 //% Tipi di dati in JavaScript
 
