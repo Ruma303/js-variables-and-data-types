@@ -1,109 +1,98 @@
 //% Tipi di variabili
 
-//$ Sintassi variabile
+//£ Sintassi variabile
 //let nomeVariabile = "Valore della variabile";
 
 
-//$ Tipi variabile
-/*
-var anni;
+//£ Tipi variabile
+
+/* var anni;
 let name = "Giorgio";
-const job = "Web Developer";
- */
-/*
-var anni; //*OK
+const job = "Web Developer"; */
+
+/* var anni; //*OK
 let name; //*OK
-const job;//!NO
- */
+const age; //.NO */
+
 
 //* Definizione vs Inizializzazione
-/*
-//Definizione o dichiarazione
+
+/* // Definizione
 let anni;
 
 // Inizializzazione
-const nome = "Piero";
+const nome = "Piero"; */
 
-console.log(anni); // undefined
-console.log(nome); // Piero
- */
+/* console.log(anni); // undefined
+console.log(nome); // Piero */
+
 
 //* Riassegnazione
-/*
-let anni = 10;
-console.log(anni); //10
 
+/* let anni = 10;
+console.log(anni); // 10
+// Riassegnazione valore
 anni = 20;
-console.log(anni); //20
- */
+console.log(anni); // 20 */
 
-/*
-let anni = 10;
-let anni = 20; //! Errore
- */
 
-/*
-const name = "Matteo";
-console.log(name);
+/* let anni = 10;
+let anni = 20; //. Errore */
 
- */
 
-/*
-name = "Piero";
-console.log(name);
- */
+/* const name = "Matteo";
+console.log(name); // Matteo
+name = "Piero"; //. Errore
+console.log(name);  */
 
-//$ Identificatore
+
+//£ Identificatore
 
 //*Proibiti
-/*
-let _nome = "Mario";
-let _cognome = "Rossi";
 
-let nomeECognomeCompleto = _nome + " " + _cognome;
+//let let;
 
-console.log(nomeECognomeCompleto);
+/* let _nome = "Mario";
+let $cognome = "Rossi";
+let nomeECognomeCompleto = _nome + " " + $cognome;
+console.log(nomeECognomeCompleto); // Mario Rossi */
 
- */
+
 //* Case sensitive
-/*
-let a = 10;
-let A = "Ciao";
-console.log(a + " " + A); //10 Ciao
 
- */
-//$ Definire più variabili in un'unica istruzione
+/* let a = 10;
+let A = "Ciao";
+console.log(a, A); // 10 Ciao */
+
+
+//£ Definire più variabili in un'unica istruzione
 
 //let a, b = 10, c = "Ciao";
-/*
-var a;
-var b = 10;
-var c = "Ciao";
- */
-//console.log(a);
 
-//$ Variable Scope e hoisting
+/* let a;
+let b = 10;
+let c = "Ciao"; */
+
+
+//£ Variable Scope e hoisting
 
 //* Global scope
 
 //let b = 10;
 
-
-/*
-if (true) { //* Block scope
-  var a = "var ok";
-  let b = "let non ok";
-  const costante = "const non ok";
+/* if (true) { //* Block scope
+var a = "var ok";
+let b = "let non ok";
+const costante = "const non ok";
 }
+console.log(a) //* var ok
+console.log(b) //. Errore
+console.log(costante) //. Errore
  */
-//console.log(a) // var ok
-//console.log(b) // errore
-//console.log(costante) // errore
-
 
 //% Tipi di dati in JavaScript
 
-//$ Dati primitivi
+//£ Dati primitivi
 
 //let stringa2 = 'Annalisa'; // String
 //let numero2 = 10.5; // Number
@@ -124,7 +113,7 @@ console.log(typeof bigIntero); //object
 */
 
 
-//$ Dati Oggetti
+//£ Dati Oggetti
 
 // Array
 /*
@@ -157,7 +146,7 @@ console.log(typeof date);
 
 //% Value type vs Reference type
 
-//$ value type
+//£ value type
 /*
 let a = 10;
 let b = a;
@@ -168,7 +157,7 @@ console.log(a); // 20
 console.log(b); // 10
  */
 
-//$ reference type
+//£ reference type
 /*
 let obj1 = {
   p1:10
